@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    display: flex;
+    color: white;
+    padding: 10px;
+    height: 4vh;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.alert{
+    background-color: rgb(93, 165, 93);
+    overflow: hidden;
+    color: rgb(2, 63, 2);
+}
+
+li {
+    list-style: none;
+    flex-grow: 0.03;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+main {
+    background-image: url("background-g47d18ee14_1920.jpg");
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: -2;
+}
+
+.bgImg {
+    animation: imageChange 15s infinite alternate;
+    z-index: 0;
+}
+
+.ImgCaption {
+    position: relative;
+    font-style: oblique;
+    font-weight: bold;
+    top: -90vh;
+    left: -30vw;
+}
+
+
+#CategoryHeading {
+    margin: 5px;
+    display: inline-block;
+    background-color: whitesmoke;
+    border: 1px ridge black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    color: orange;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.itemShowcase {
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#Fashion {
+    padding: 10px;
+    background-color: rgb(63, 113, 63);
+}
+
+#Technology {
+    padding: 10px;
+    background-color: darkslateblue;
+}
+
+#Health {
+    padding: 10px;
+    background-color: rgb(55, 101, 188);
+}
+
+.container2 {
+    padding: 10px;
+}
+
+.row {
+    border-bottom: 2px solid black;
+}
+
+.container3 {
+    background-color: rgb(119, 112, 18);
+}
+
+h3 {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    background-color: white;
+}
+
+.contributors {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    align-items: center;
+}
+
+.person {
+    border: 2px solid black;
+}
+
+#info{
+    animation: slideInfo 15s normal infinite;
+}
+
+@keyframes imageChange {
+    0% {
+        content: url('bgm1.jpg')
+    }
+
+    50% {
+        content: url('bgm2.jpg');
+    }
+
+    100% {
+        content: url('bgm3.jpg');
+    }
+}
+
+@keyframes slideInfo {
+    0%{
+        transform: translateX(1600px);
+    }
+
+    50%{
+        transform: translateX(0px);
+    }
+
+    100%{
+        transform: translateX(-2000px);
+    }
+}
+
+@media screen and (max-width <= 1200) {
+    .bgImg{
+        width: 700px;
+        height: 500px;
+    }
+}
